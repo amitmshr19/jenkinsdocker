@@ -7,7 +7,7 @@ pipeline {
   agent any
  
   stages {
-    stage('Pull Source') {
+    stage('Pull SourceE') {
       steps {
         git credentialsId: '4910f461-622e-4a9e-ad9d-76c63d42809f', branch: "${git_branch}", url: "${git_url}"
        
