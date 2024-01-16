@@ -1,6 +1,6 @@
 pipeline {
    environment {
-     git_url = "https://github.com/amitmshr19/jenkinsdocker.git"
+     git_url = "https://github.com/amitmshr19/jenkinsdocker/java-project-master.zip"
      git_branch = "master"
    }
   //agent {label 'Dev'}
@@ -16,8 +16,8 @@ pipeline {
     
     stage('Maven Build') {
      steps { 
-          //sh "if [ -f \"pom.xml\" ];then mvn -B -f pom.xml clean package && cp target/*.jar .;else echo \"This is not a java Project\";fi"
-          sh "mvn clean package && cp target/*.jar . "
+          sh "if [ -f \"pom.xml\" ];then mvn -B -f pom.xml clean package && cp target/*.jar .;else echo \"This is not a java Project\";fi"
+          //sh "mvn clean package && cp target/*.jar . "
      }
     }
      
