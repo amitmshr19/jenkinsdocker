@@ -1,6 +1,6 @@
 pipeline {
    environment {
-     git_url = "https://github.com/amitmshr19/jenkinsdocker.git/java-project-master.zip"
+     git_url = "https://github.com/amitmshr19/jenkinsdocker.git"
      git_branch = "master"
    }
   //agent {label 'Dev'}
